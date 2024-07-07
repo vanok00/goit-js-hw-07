@@ -218,6 +218,7 @@ ul {
     justify-content: flex-start;
     gap: 44px;
     padding: 32px;
+    flex-wrap: wrap;
 }
 .box {
     width: 30px;

@@ -9,15 +9,18 @@ function createBoxes(amount) {
     boxesDiv.innerHTML = ''
 
     let size = 30
+    const fragment = document.createDocumentFragment()
+
     for (let i = 0; i < amount; i++) {
         const box = document.createElement('div')
         box.classList.add('box')
         box.style.width = `${size}px`
         box.style.height = `${size}px`
         box.style.backgroundColor = getRandomHexColor()
-        boxesDiv.appendChild(box)
+        fragment.appendChild(box)
         size += 10
     }
+    boxesDiv.append(fragment)
 }
 
 function destroyBoxes() {
