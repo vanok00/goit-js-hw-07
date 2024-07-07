@@ -10,6 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener(`click`, function () {
         const newColor = getRandomHexColor()
         document.body.style.backgroundColor = newColor
-        spanColor.textContent = newColor
     })
 })
